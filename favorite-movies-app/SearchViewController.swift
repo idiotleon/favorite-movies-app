@@ -84,7 +84,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func retrieveMoviesByTerm(searchTerm: String){
         let urlPre = "https://api.themoviedb.org/3/movie/76341"
-        let api_key = "?api_key=74684520f47c025a768d03e231efe89c"
+        let api_key = "?api_key="
         let url = urlPre + api_key
         
         HTTPHandler.getJson(urlString: url, completionHandler: parseDataIntoMovies)
